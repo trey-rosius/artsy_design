@@ -1,0 +1,69 @@
+$color-grey:#999999;
+$color-dark:#42495B;
+$color-white:#ffffff;
+$color-red:#e0436b;
+$color-purple:#6759ae;
+$color-grey-dark-2: #F9F9F9;
+// FONT VARIABLES
+$font-primary: 'Archivo Black', sans-serif;
+$font-display:'Roboto Mono', monospace;
+
+//responsive breakpoints
+$bp-xxxxlarge: 153em;// 2450px/16
+$bp-xxxlarge: 131em; //2100px/16
+$bp-xxlarge: 112em; //1800px/16
+$bp-xlarge: 100em; //1600px/16
+$bp-large:87.5em;//1400px
+$bp-medium:78em; //1250px
+$bp-sm-medium:62.5em; //1000px
+$bp-sm-small:43.75em; //700px
+$bp-small:31.25em; //500px
+
+
+//responsive height breakpoints
+$bp-height: 49em; //height 780px/16
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+  
+
+ 
+}
+body{
+ 
+    font-weight: 300;
+    line-height: 1.6rem;
+    min-height: 50vh;
+    font-family: $font-display;
+  
+    
+   
+   
+   
+   
+
+}
+.container{
+
+    background-image: url('/img/chalkboard.jpg');
+    display: grid;
+    grid-template-rows: min-content 60vh 40vh repeat(3,min-content);
+    grid-template-columns:[sidebar-start] 50vh [sidebar-end full-start] 
+        repeat(8,[col-start] minmax(min-content,1fr) [col-end]) 
+        [full-end];
+       
+        
+}
