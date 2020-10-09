@@ -1,0 +1,28 @@
+.fab{
+    grid-row: 4/5;
+    grid-column: 8/-1;
+    z-index: 10;
+    width: 7rem;
+    height:7rem;
+    display: grid;
+    top: 80%;
+    left: 90%;
+    background-color: $color-red;
+    position: fixed;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: transform 0.5s;
+
+    &:hover{
+        background-color: $color-purple;
+        transform:scale(.7);
+    }
+
+    &__icon{
+        fill:white;
+        place-self: center;
+       width: 5rem;
+       height: 5rem;
+       
+    }
+}
