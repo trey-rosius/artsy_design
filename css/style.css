@@ -736,3 +736,30 @@ button a {
 strong {
   color: white;
   font-size: 14px; }
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px; }
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .caption > * {
+    padding: 10px 10px;
+    font-size: 20px;
+    color: white; }
+    .caption > *:last-child {
+      background-color: #e0436b; }
+
+.num {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .num > * {
+    padding: 10px 10px;
+    font-size: 20px;
+    color: white; }
+    .num > *:last-child {
+      background-color: #6759ae; }
