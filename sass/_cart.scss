@@ -1,0 +1,164 @@
+
+
+.cart{
+    grid-row:2/-1;
+    grid-column: 1/-1;
+    
+  
+
+&__option{
+    grid-row:1/2;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 0;
+    text-align: center;
+    
+    margin: 20px;
+}
+&__hor{
+    grid-row:2/3;
+    grid-column: 1/-1;
+    height: 5px;
+ 
+    background-color:white;
+}
+
+&__icon{
+  
+  display: flex;
+  flex-direction: column;
+
+    &--1{
+   color: $color-grey-dark-2;
+   font-size: 2rem;
+   padding: 2rem;
+   background-color: $color-red;
+   border: solid white 2px;
+   
+
+        
+    }
+    &--title{
+        margin-top: 1rem;
+        color: $color-grey-dark-2;
+        font-size: 2rem;
+    }
+    &--2{
+        color: $color-grey-dark-2;
+        font-size: 2rem;
+        padding: 2rem;
+        border: solid white 2px;
+
+    }
+    &--3{
+
+        color: $color-grey-dark-2;
+        font-size: 2rem;
+        padding: 2rem;
+        border: solid white 2px;
+    }
+}
+
+
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+
+    
+}
+tr{
+    
+    text-align: center;
+    
+}
+th{
+    padding:10px 0;
+    color: $color-grey-dark-2;
+    font-size: 20px;
+}
+td{
+    text-align: center;
+}
+.product-name{
+    text-align: left;
+    padding-top: 36px;
+    font-size: 12px;
+    color: white;
+    
+}
+
+td,
+th{
+ 
+    border-bottom: 1px solid #ccc;
+}
+
+.product-img{
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+.product-subTotal{
+    font-size: 12px;
+    color: $color-grey-dark-2;
+}
+.product-price{
+    font-size: 12px;
+    color: $color-grey-dark-2;
+}
+button a{
+    color: white;
+    transition: 0.3s all ease;
+}
+.delete-product,
+.quantity-adjust:first-of-type,
+.quantity-adjust:last-of-type{
+    padding: 0 7px;
+    border:none;
+}
+.quantity-adjust:first-of-type{
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-red;
+
+}
+.delete-product{
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-red;
+}
+.delete-product:hover{
+    background-color: white;
+}
+.quantity-adjust:first-of-type:hover{
+    background-color: white;
+}
+.quantity-adjust:last-of-type{
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-purple;
+
+}
+.quantity-adjust:last-of-type:hover{
+    background-color: white;
+}
+strong{
+    color:white;
+    font-size: 14px;
+}

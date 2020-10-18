@@ -12,10 +12,10 @@
 
 .header{
     grid-column: 1/-1;
-    grid-row: 1/6;
+    grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(9,1fr);
-    grid-template-rows: 20rem repeat(8,min-content);
+    grid-template-rows: 20rem;
     @media  only screen  and (max-width:$bp-xxlarge){
         grid-template-rows: 10rem repeat(8,min-content);
    
@@ -71,122 +71,124 @@
     }
     
 
-    &__profile{
-       grid-row:3/-1;
-       grid-column: 3/8;
-       display: grid;
-       grid-template-columns: repeat(8,1fr);
-       grid-template-rows: repeat(14,min-content);
-       gap: 1rem;
-       @media  only screen  and (max-width:$bp-xxlarge){
-        grid-row:2/-1;
-        grid-column: 1/8;
-   
-     
-      
-     }
-
-
-        &--picture{
-            width: 10rem;
-            height: 10rem;
-            border-radius: 100%;
-            grid-row: 2/4;
-            grid-column: 4/6;
-            place-self: center;
-            
-           border-style: solid;
-           border-color: white;
-           @media  only screen  and (max-width:$bp-xxlarge){
-            grid-row: 2/4;
-            grid-column: 2/5;
-       
-         
-          
-         }
-          
-        }
-
-        &--full_names{
-            grid-row: 5/6;
-            grid-column: 3/7;
-            font-size: 1.7rem;
-            height: 4rem;
-           
-            padding-left: 5px;
-            padding-right: 5px;
-            
-            @media  only screen  and (max-width:$bp-xxlarge){
-                grid-row: 5/6;
-            grid-column: 1/6;
-           
-             
-              
-             }
-        }
-        &--email{
-            grid-row: 6/7;
-            grid-column: 3/7;
-            font-size: 1.7rem;
-            height: 4rem;
-            padding-left: 5px;
-            padding-right: 5px;
-            @media  only screen  and (max-width:$bp-xxlarge){
-                grid-row: 6/7;
-            grid-column: 1/6;
-           
-             
-              
-             }
-        }
-        &--phone-number{
-            grid-row: 7/8;
-            grid-column: 3/7;
-            font-size: 1.7rem;
-            height: 4rem;
-            padding-left: 5px;
-            padding-right: 5px;
-            @media  only screen  and (max-width:$bp-xxlarge){
-                grid-row: 7/8;
-            grid-column: 1/6;
-           
-             
-              
-             }
-        }
-        &--address{
-            grid-row: 8/10;
-            grid-column: 3/7;
-            font-size: 1.7rem;
-            height: 4rem;
-            padding-left: 5px;
-            padding-right: 5px;
-            @media  only screen  and (max-width:$bp-xxlarge){
-                grid-row: 8/10;
-            grid-column: 1/6;
-           
-             
-              
-             }
-        }
-        &--btn{
-            grid-row: 10/11;
-            grid-column: 3/7;
-            font-size: 1.7rem;
-            height: 4rem;
-            padding-left: 5px;
-            padding-right: 5px;
-            @media  only screen  and (max-width:$bp-xxlarge){
-                grid-row: 10/11;
-            grid-column: 1/6;
-           
-             
-              
-             }
-        }
-    }
+  
 
 }
+
+.content{
+    grid-row:2/-1;
+    grid-column: 3/8;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(14,min-content);
+    gap: 1rem;
+    @media  only screen  and (max-width:$bp-xxlarge){
+     grid-row:2/-1;
+     grid-column: 1/8;
+
+  
+   
+  }
+
+
+     &__picture{
+         width: 10rem;
+         height: 10rem;
+         border-radius: 100%;
+         grid-row: 2/4;
+         grid-column: 4/6;
+         place-self: center;
+         
+        border-style: solid;
+        border-color: white;
+        @media  only screen  and (max-width:$bp-xxlarge){
+         grid-row: 2/4;
+         grid-column: 2/5;
+    
+      
+       
+      }
+       
+     }
+
+     &__full_names{
+         grid-row: 5/6;
+         grid-column: 3/7;
+         font-size: 1.7rem;
+         height: 4rem;
+        
+         padding-left: 5px;
+         padding-right: 5px;
+         
+         @media  only screen  and (max-width:$bp-xxlarge){
+             grid-row: 5/6;
+         grid-column: 1/6;
+        
+          
+           
+          }
+     }
+     &__email{
+         grid-row: 6/7;
+         grid-column: 3/7;
+         font-size: 1.7rem;
+         height: 4rem;
+         padding-left: 5px;
+         padding-right: 5px;
+         @media  only screen  and (max-width:$bp-xxlarge){
+             grid-row: 6/7;
+         grid-column: 1/6;
+        
+          
+           
+          }
+     }
+     &__phone-number{
+         grid-row: 7/8;
+         grid-column: 3/7;
+         font-size: 1.7rem;
+         height: 4rem;
+         padding-left: 5px;
+         padding-right: 5px;
+         @media  only screen  and (max-width:$bp-xxlarge){
+             grid-row: 7/8;
+         grid-column: 1/6;
+        
+          
+           
+          }
+     }
+     &__address{
+         grid-row: 8/10;
+         grid-column: 3/7;
+         font-size: 1.7rem;
+         height: 4rem;
+         padding-left: 5px;
+         padding-right: 5px;
+         @media  only screen  and (max-width:$bp-xxlarge){
+             grid-row: 8/10;
+         grid-column: 1/6;
+        
+          
+           
+          }
+     }
+     &__btn{
+         grid-row: 10/11;
+         grid-column: 3/7;
+         font-size: 1.7rem;
+         height: 4rem;
+         padding-left: 5px;
+         padding-right: 5px;
+         @media  only screen  and (max-width:$bp-xxlarge){
+             grid-row: 10/11;
+         grid-column: 1/6;
+        
+          
+           
+          }
+     }
+ }
 
 
 
